@@ -18,12 +18,16 @@ public class HibernateOperations {
 		
 		Session session = sessionFactory.openSession();
 		
+		insert(session);
+		
+		
+	}
+
+	private static void insert(Session session) {
 		Students student = new Students(2,"kvs",29);
 		
 		session.beginTransaction();
 		session.persist(student);
 		session.getTransaction().commit();
-		
-		
 	}
 }
