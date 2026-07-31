@@ -18,7 +18,7 @@ public class HibernateOperations {
 		
 		Session session = sessionFactory.openSession();
 		
-		insert(session);
+		//insert(session);
 		
 		
 	}
